@@ -1,0 +1,4 @@
+.idea/
+node_modules/
+*.map
+app/out.js

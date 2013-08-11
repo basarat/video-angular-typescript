@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo App</title>
+
+    <script src="vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+
+    <!--Our Styles-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Scripts-->
+    <script src="vendor/jquery-1.9.1.min.js"></script>
+    <script src="vendor/angular.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--our code -->
+    <script src="app/out.js"></script>
+
+</head>
+<body ng-app="demoApp" ng-controller='MainController'>
+
+    <!-- Add your site or application content here -->
+    <div class="well">
+        <h1>Current Count: {{vm.count}}</h1>
+        <h2>Current Value: {{vm.value}}</h2>
+    </div>
+
+    <div ng-repeat="progressval in vm.progress">
+        <h3>{{progressval}}</h3>
+        <progressbar progress="progressval" msg ="{{vm.message}}" click="progressval = progressval + 10" 
+                     value="vm.value" change="vm.count = vm.value">
+            An element inside : {{progressval}}
+        </progressbar>
+    </div>
+
+</body>
+</html>
