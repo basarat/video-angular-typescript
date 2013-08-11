@@ -10,7 +10,7 @@
 //grunt-start
 /// <reference path="directives/progressbar.html.ts" />
 /// <reference path="controllers/MainController.ts" />
-/// <reference path="directives/progressbarDirective.ts" />
+/// <reference path="directives/progressbar.ts" />
 /// <reference path="services/LogService.ts" />
 //grunt-end
 

@@ -1,4 +1,3 @@
-/// <reference path="../reference.ts" />
 var LogService = (function () {
     function LogService($http) {
         this.$http = $http;

@@ -1,7 +1,5 @@
-/// <reference path="../reference.ts" />
 var controllers;
 (function (controllers) {
-    // Make sure you export ony controllers
     var MainController = (function () {
         function MainController($scope, logService) {
             this.logService = logService;

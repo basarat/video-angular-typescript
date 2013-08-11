@@ -6,7 +6,6 @@ interface X extends ng.IScope {
 }
 
 directives.directive('progressbar', ['$compile', function progressbarDirective($compile: ng.ICompileService): ng.IDirective {
-    console.log(progressbar.html);
 
     return {        
         restrict: 'EAC',
