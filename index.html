@@ -11,10 +11,13 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!--our code -->
-
+    <script src="app/out.js"></script>
 </head>
-<body>
-
-
+<body ng-app="myApp" ng-controller="MainController">
+{{vm.message}}
+    <div ng-controller ="TestController">
+        {{vm.message}}
+    </div>
+    <testme></testme>
 </body>
 </html>
